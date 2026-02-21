@@ -1,0 +1,24 @@
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# Compiled files
+bin/
+*.class
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+# MySQL / DB local config
+*.sql
