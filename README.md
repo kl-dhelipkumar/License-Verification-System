@@ -1,6 +1,6 @@
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
-# 🪪 License Verification System (Java + JDBC)
+# 🪪 License Verification System (Java + JDBC + MySQL)
 
 ## 📌 Project Description
 This is a console-based Java application that verifies a driving license application using PAN Card and Aadhaar Card details.
