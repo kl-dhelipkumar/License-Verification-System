@@ -30,12 +30,12 @@ public class LicenseDAO {
 
 		} catch (SQLException e) {
 			throw new DatabaseException("Error checking application", e);
-		}finally {
+		} finally {
 			try {
 				res.close();
 				pstmt.close();
 				con.close();
-				
+
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -56,7 +56,7 @@ public class LicenseDAO {
 			pstmt.executeUpdate();
 		} catch (SQLException e) {
 			throw new DatabaseException("Error inserting application", e);
-		}finally {
+		} finally {
 			try {
 				pstmt.close();
 				con.close();
