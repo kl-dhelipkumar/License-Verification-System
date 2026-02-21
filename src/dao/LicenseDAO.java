@@ -9,7 +9,7 @@ import exception.DatabaseException;
 import model.LicenceApplication;
 import util.DB;
 
-public class LicenceDAO {
+public class LicenseDAO {
 	Connection con = null;
 	PreparedStatement pstmt = null;
 	ResultSet res = null;

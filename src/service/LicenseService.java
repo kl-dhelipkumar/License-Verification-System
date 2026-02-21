@@ -5,13 +5,13 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.Period;
 
-import dao.LicenceDAO;
+import dao.LicenseDAO;
 import model.AadhaarCard;
 import model.LicenceApplication;
 import model.PanCard;
 import util.DB;
 
-public class LicenceService {
+public class LicenseService {
 
 	public VerificationResult verify(PanCard pc, AadhaarCard ac) {
 
@@ -41,10 +41,10 @@ public class LicenceService {
 
 			if (!pc.getPanAddress().equalsIgnoreCase(ac.getAadhaarAddress()))
 				return new VerificationResult(false, "Address mismatch");
-			
+
 			LicenceApplication la = new LicenceApplication(pc.getPanName(), pc.getPanDob(), pc.getPanAddress(),
 					pc.getPanId(), ac.getAadhaarNum());
-			LicenceDAO lDAO = new LicenceDAO();
+			LicenseDAO lDAO = new LicenseDAO();
 			lDAO.insertAppliaction(la);
 			con.commit();
 			return new VerificationResult(true, "Application Verified Successfully");

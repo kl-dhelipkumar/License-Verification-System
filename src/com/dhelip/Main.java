@@ -7,7 +7,7 @@ import dao.PanDAO;
 import exception.DatabaseException;
 import model.AadhaarCard;
 import model.PanCard;
-import service.LicenceService;
+import service.LicenseService;
 import service.VerificationResult;
 
 public class Main {
@@ -24,7 +24,7 @@ public class Main {
 
 			PanDAO panDAO = new PanDAO();
 			AadhaarDAO aadhaarDAO = new AadhaarDAO();
-			LicenceService ls = new LicenceService();
+			LicenseService ls = new LicenseService();
 
 			PanCard pc = panDAO.findByPanId(panId);
 			AadhaarCard ac = aadhaarDAO.findByAadhaarNum(aadhaarNum);
